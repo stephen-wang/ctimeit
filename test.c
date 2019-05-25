@@ -13,7 +13,8 @@ static int fibonacci(int n)
 }
 
 
-static int gcd(int a, int b) {
+static int gcd(int a, int b)
+{
 	if (a == 0 || b== 0) {
 	    return 1;
 	}
