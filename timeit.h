@@ -92,7 +92,7 @@ void get_desc_time(uint64_t ns, char *buf, int len)
     if (n > 1) {                                                            \
         printf("%d loops, %s, avg: %s per loop\n", n, strSpan, strAvgSpan); \
     } else {                                                                \
-        printf("avg: %s (%ld ns)\n", strAvgSpan, duration);                 \
+        printf("avg: %s (%lu ns)\n", strAvgSpan, duration);                 \
     }                                                                       \
 } while (0)
 #endif //defined(_WIN32) || defined(_WIN64)
