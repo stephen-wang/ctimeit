@@ -82,8 +82,7 @@ void get_desc_time(uint64_t ns, char *buf, int len)
     QueryPerformanceCounter(&end);                                          \
     elapse.QuadPart = (end.QuadPart - start.QuadPart) * 1000000;            \
     elapse.QuadPart /= frequency.QuadPart;                                  \
-    duration = frequency.QuadPart * 1000;                                   \
-    printf("duration:%lu\n", duration);                                     \
+    duration = elapse.QuadPart * 1000;                                      \
                                                                             \
     char strSpan[256];                                                      \
     char strAvgSpan[256];                                                   \
